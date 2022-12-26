@@ -1,0 +1,64 @@
+.draw-body {
+    background-color: black;
+    width: 220px;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 10px;
+}
+.draw-head {
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+.draw-center {
+    padding: 10px;
+    border: 2px solid red;
+}
+.draw-footer {
+
+    padding: 10px;
+    border: 2px solid red;
+}
+.search {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+.draw-menu-btn {
+    background-color: transparent !important;
+    width: 40% !important;
+    font-size: small !important ;
+    color: rgb(188, 185, 185) !important;
+    border: none !important; 
+    outline:  none !important;
+    
+}
+
+.draw-menu-btn:focus {
+    background-color: white !important;
+    color: rgb(0, 0, 197) !important;
+}
+
+.draw-nav{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 10px !important;
+    flex-direction: row;
+    border: 1px solid rgb(234, 227, 214);
+    width: max-content !important;
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+    padding: 2px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .draw-body {
+        width: 80px;
+    }
+} 
