@@ -9,20 +9,25 @@
     height: 100vh;
     border-radius: 10px;
 }
+
 .draw-head {
-    /* border: 2px solid red; */
     padding: 10px;
 }
 
 .draw-center {
     padding: 10px;
-    border: 2px solid red;
-}
-.draw-footer {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: -5%;
 
+}
+
+.draw-footer {
     padding: 10px;
     border: 2px solid red;
 }
+
 .search {
     width: 100%;
     border-radius: 5px;
@@ -30,14 +35,15 @@
     border: none;
     padding: 5px;
 }
+
 .draw-menu-btn {
     background-color: transparent !important;
     width: 40% !important;
-    font-size: small !important ;
+    font-size: small !important;
     color: rgb(188, 185, 185) !important;
-    border: none !important; 
-    outline:  none !important;
-    
+    border: none !important;
+    outline: none !important;
+
 }
 
 .draw-menu-btn:focus {
@@ -45,7 +51,7 @@
     color: rgb(0, 0, 197) !important;
 }
 
-.draw-nav{
+.draw-nav {
     display: flex;
     /* flex-wrap: wrap; */
     width: 10px !important;
@@ -57,8 +63,65 @@
     padding: 2px !important;
 }
 
+.version-btn {
+    width: max-content !important;
+    height: max-content !important;
+    padding: 3px !important;
+    font-size: x-small !important;
+    font-weight: bold !important;
+    border-radius: 10% !important;
+}
+
+.version-list {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+}
+
+.main-list {
+    list-style-type: none !important;
+}
+
+.main-list>li {
+    margin-top: 10px;
+    /* border: 2px solid pink; */
+    padding: 4px;
+    margin-left: -25px;
+}
+
+.main-list>li:hover {
+    color: rgb(255, 187, 0);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.list-head {
+    color: gray;
+}
+
+.list-head:hover {
+    color: gray !important;
+}
+
+.card-title {
+    color: black;
+    display: flex;
+    font-size: medium !important;
+    font-weight: 400 !important;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 2px solid rgb(255, 65, 65);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 0%;
+    padding-top: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     .draw-body {
         width: 80px;
     }
-} 
+}
